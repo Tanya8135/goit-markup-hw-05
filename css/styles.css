@@ -30,6 +30,7 @@ img {
 }
 
 .conteiner {
+  display: block;
   margin: 0 auto;
   padding: 0 auto;
   width: 1200px;
@@ -88,6 +89,10 @@ img {
   margin-left: 50px;
 }
 
+/ {
+
+}
+
 .nav-link {
   display: block;
   color: var(--title-text-color);
@@ -96,6 +101,41 @@ img {
   line-height: 1.14;
   padding-top: 32px;
   padding-bottom: 32px;
+
+  align-items: center;
+  color: currentColor;
+}
+
+
+/* .current::before,
+.current::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+}
+
+.current::before {
+  margin: 0;
+  background-image: url(../images/hover.jpg);
+  border-radius: 2px;
+}
+
+.current::after {
+  display: none;
+  margin: 0;
+  width: 78px;
+  height: 4px;
+  background-image: url(../images/hover.jpg);
+  border-radius: 2px;
+}
+
+.current:hover::after {
+  display: block;
+} */ */
+
+/ {
+
 }
 
 .auth-nav {
