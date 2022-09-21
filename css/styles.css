@@ -156,6 +156,39 @@ img {
   padding-bottom: 94px;
 }
 
+.card-overlay {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 370px;
+  height: 294px;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translatey(100%);
+  transition: transform 250ms ease;
+}
+
+.card-overlay:hover .card-box {
+  transform: translateY(0);
+}
+
+.card-text {
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: var(--btn-white-color);
+  padding: 68px 24px;
+}
+
 .auth-btn {
   display: flex;
   align-items: center;
