@@ -15,6 +15,7 @@ body {
   --rgba-text-color: rgba(255, 255, 255, 0.6);
   --bgc-border-portfolio: #eeeeee;
   --border-icon-logo: #afb1b8;
+  --img-bgc-color:rgba(47, 48, 58, 0.8);
 }
 
 h1,
@@ -89,10 +90,6 @@ img {
   margin-left: 50px;
 }
 
-/ {
-
-}
-
 .nav-link {
   display: block;
   color: var(--title-text-color);
@@ -106,36 +103,21 @@ img {
   color: currentColor;
 }
 
-
-/* .current::before,
-.current::after {
-  content: "";
-  width: 24px;
-  height: 24px;
-  background-size: contain;
-}
-
-.current::before {
-  margin: 0;
-  background-image: url(../images/hover.jpg);
-  border-radius: 2px;
-}
-
-.current::after {
-  display: none;
-  margin: 0;
-  width: 78px;
-  height: 4px;
-  background-image: url(../images/hover.jpg);
-  border-radius: 2px;
-}
-
-.current:hover::after {
+.site-nav .current {
+  position: relative;
   display: block;
-} */ */
+  color: var(--transitional-text-color);
+}
 
-/ {
-
+.item .current::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  bottom: 0;
+  background: var(--transitional-text-color);
+  border-radius: 2px;
 }
 
 .auth-nav {
@@ -207,12 +189,14 @@ img {
 
 .card-box {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 370px;
   height: 294px;
-  background-color: rgba(33, 150, 243, 0.9);
-
+  
+  
+  background-color: var(--transitional-text-color);
+/* transition: cubic-bezier(); */
   transform: translatey(100%);
   transition: transform 250ms ease;
 }
@@ -271,7 +255,6 @@ img {
 .about-cards {
   display: flex;
   flex-wrap: wrap;
-  /* gap: 30px; */
 }
 
 .cards-flex {
@@ -450,6 +433,36 @@ img {
   display: block;
 }
 
+.img-overley {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.img-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 370px;
+  height: 70px;
+  background: var(--img-bgc-color);
+}
+
+.img-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--btn-white-color);
+  padding: 27px 107px;
+}
+
+/* Team setion */
 .team-our {
   background: var(--btn-background-filter);
   margin-right: auto;
