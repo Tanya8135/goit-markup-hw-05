@@ -7,7 +7,7 @@ body {
 :root {
   --transitional-text-color: #2196f3;
   --title-text-color: #212121;
-  --logo-text-color: #000000;
+  --black-text-color: #000000;
   --grey-text-color: #757575;
   --btn-background-filter: #f5f4fa;
   --btn-white-color: #ffffff;
@@ -185,21 +185,13 @@ img {
 
 .card-overlay {
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  height: 100%;
   overflow: hidden;
 }
 
-/* .sub-img {
+.all {
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-} */
+  
+}
 
 .card-box {
   position: absolute;
@@ -208,9 +200,10 @@ img {
   width: 370px;
   height: 294px;
   
+  
   background: var(--cards-fon-blue);
 
-  transform: translatey(100%);
+  transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -339,26 +332,7 @@ img {
   width: 696px;
 }
 
-.hero-btn {
-  margin: 0 auto;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
-  text-align: center;
-  color: var(--btn-white-color);
-  background: var(--transitional-text-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  padding: 10px 34px;
-  border: none;
-  min-width: 216px;
-  /* cursor: pointer; */
-}
 
-.hero-btn {
-  outline: none;
-}
 
 /* About section */
 .about-title {
@@ -774,3 +748,72 @@ img {
   margin-right: 0;
 }
 
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.modal {
+  width: 528px;
+  height: 581px;
+  background-color: var(--btn-white-color);
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50% -50%);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.close-btn {
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: var(--btn-white-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: var(--black-text-color);
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.hero-btn {
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  color: var(--btn-white-color);
+  background: var(--transitional-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 34px;
+  border: none;
+  min-width: 216px;
+  cursor: pointer;
+}
+
+.hero-btn {
+  outline: none;
+}
