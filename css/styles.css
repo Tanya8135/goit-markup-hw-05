@@ -754,7 +754,7 @@ img {
   border-color: var(--transitional-text-color);
 }
 
-::-webkit-input-placeholder {
+.subsc-write input::placeholder {
   font-family: 'Roboto' sans-serif;
   font-size: 16px;
   line-height: 1.3;
