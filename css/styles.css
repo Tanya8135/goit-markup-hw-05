@@ -1001,15 +1001,11 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-field:focus-within > .form-comment {
+/* .form-field:focus-within > .form-comment {
   transform: translate(0);
   left: 0;
   color: rgba(240, 248, 255, 0);
-}
-
-.form-field:not(:focus-within) > .form-comment {
-  /* color: #00000000; */
-  }
+} */
 
 .test {
   /* margin: 0;
@@ -1019,6 +1015,7 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
+  color: var(--title-text-color);
 }
 
 .test:focus {
