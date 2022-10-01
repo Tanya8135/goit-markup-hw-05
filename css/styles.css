@@ -918,7 +918,7 @@ img {
 
   transform: translateY(-50%);
 
-  transition: transform 250ms linear;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-form {
@@ -998,8 +998,12 @@ img {
 
   transform: translate(0);
 
-  transition: color 150ms linear;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.comment:not(:focus-within) > .form-comment {
+  color: #00000000;
+  }
 
 .test {
   /* margin: 0;
