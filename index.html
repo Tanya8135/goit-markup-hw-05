@@ -445,9 +445,72 @@
     </svg>
     <!-- <button type="button" data-modal-close>Закрыть</button> -->
   </button>
-  </div>
 
-  
+<form class="form">
+
+  <b class="title-modal">Залиште свої дані, ми вам передзвонимо</b>
+
+  <label class="form-field">
+    <input type="text" name="name" class="form-input" placeholder=" ">
+    <span class="form-label">Ім'я</span>
+        <span class="icon-form">
+          <svg viewBox="0 0 32 32" width="18" class="person">
+          <use xlink:href="./images/icons.svg#icon-person"></use>
+        </svg>
+      </span>
+      </label>
+
+      
+      <label class="form-field">
+        <input  type="tel" name="tel" class="form-input" placeholder=" ">
+        <span class="form-label">Телефон</span>
+        <span class="icon-form">
+          <svg viewBox="0 0 32 32" width="18" class="person">
+          <use xlink:href="./images/icons.svg#icon-modal-tel"></use>
+        </svg>
+      </span>
+      </label>
+
+      <label class="form-field">
+        <input  type="email" name="email" class="form-input" placeholder=" ">
+        <span class="form-label">Пошта</span>
+        <span class="icon-form">
+          <svg viewBox="0 0 32 32" width="18" class="person">
+          <use xlink:href="./images/icons.svg#icon-modal-email"></use>
+        </svg>
+      </span>
+      </label>
+
+      <!-- <b class="text-comment">Коментар</b> -->
+      <label class="form-field comment">
+        <span class="text-comment">Коментар</span>
+        <span class="form-comment">Введіть текст</span>
+        <textarea name="comment" rows="8" class="test" placeholder=" "></textarea>
+      </label>
+
+
+      <!-- задам margin-left -->
+        <label class="policy">
+        <input class="checkbox" type="checkbox" name="policy" value="css">
+        <span class="icon-check">
+          <!-- <svg viewBox="0 0 100 100" width="15" hieght="15" class="person color-check">
+            <use xlink:href="./images/icons.svg#icon-check"></use>
+          </svg> -->
+        </span>
+        <span class="policy-text">Погоджуюся з розсилкою та приймаю <a href="/" class="policy-link">Умови договору</a> </span> 
+      </label>
+
+      <!-- задам margin-left -->
+      <button type="submit" class="hero-btn btn-form">Відправити</button>
+    </form>
+ 
+    </div>
+</div>
+
+</form>
+
+
+  </div>
 </div>
 <!-- <button type="button" class="close-btn">X</button> -->
     <script src="./js/modal.js"></script>
