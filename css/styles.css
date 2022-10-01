@@ -961,6 +961,7 @@ img {
 .form-input:not(:placeholder-shown) + .form-label {
   transform: translateY(-35px);
   left: 0;
+  /* color: #00000000; */
 }
 
 .form-input:focus {
@@ -1007,7 +1008,7 @@ img {
   color: rgba(240, 248, 255, 0);
 } */
 
-.test {
+.plh-text {
   /* margin: 0;
   padding: 0; */
   width: 448px;
@@ -1020,20 +1021,6 @@ img {
 
 .test:focus {
   border-color: #2196f3;
-}
-
-
-
-.text {
-  display: block;
-  margin: 0 auto;
-  padding: 0 auto;
-  margin-bottom: 4px;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.2;
-  letter-spacing: 0.01em;
-  color: #757575;
 }
 
 .policy {
